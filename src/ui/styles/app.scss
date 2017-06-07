@@ -1,3 +1,15 @@
-h1 {
-  color: #444;
+@import './boostrap.scss';
+
+.main-container {
+  margin-top: 20px;
+}
+
+.theme-btn {
+  height: 100px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.btn-question {
+  margin-bottom: 20px;
 }

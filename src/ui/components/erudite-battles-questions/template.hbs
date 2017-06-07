@@ -1,3 +1,8 @@
-<div>
-  <h1>Welcome to Glimmer!</h1>
+<div class="container main-container">
+  {{#if selectingQuestion}}
+    <button type="button" class="btn btn-danger btn-lg btn-block theme-btn" onclick={{action selectEnglish}}>English<</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block theme-btn" onclick={{action selectMath}}>Math</button>
+  {{else}}
+    <themed-question @question={{question}} />
+  {{/if}}
 </div>
